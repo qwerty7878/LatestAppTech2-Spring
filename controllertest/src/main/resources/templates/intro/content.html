@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Content Example</title>
+</head>
+<body>
+    <h1 > This page is Content</h1>
+    <p th:text="'Hello, 이전 페이지에서 get 방식으로 받은 name 값은 '+ ${name} +'입니다'"></p>
+    <a th:href="'/home?name=' + ${name}">main 페이지로 이동</a>
+</body>
+</html>

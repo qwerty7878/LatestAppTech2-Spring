@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title > Spring Web Example</title>
+</head>
+<body>
+<h1>Welcome to Spring Web!</h1>
+<p th:text="'Hello, ' + ${name} + '! This page is rendered by Spring.'"></p>
+<a th:href="'/intro/content?name=' + ${name}">content 페이지로 이동</a>
+</body>
+</html>
